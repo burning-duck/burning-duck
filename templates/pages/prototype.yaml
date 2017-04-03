@@ -1,7 +1,7 @@
 dialog: mte:pages/pageProperties
 class: info.magnolia.module.site.templates.PrototypeTemplateDefinition
 
-templateScript: /atlas/templates/pages/main.ftl
+templateScript: /blog/templates/pages/main.ftl
 renderType: site
 type: feature
 
@@ -13,12 +13,12 @@ areas:
   htmlHeader:
     createAreaNode: false
     renderType: freemarker
-    templateScript: /atlas/templates/pages/areas/htmlHeader.ftl
+    templateScript: /blog/templates/pages/areas/htmlHeader.ftl
     type: noComponent
   nav:
     createAreaNode: false
     renderType: freemarker
-    templateScript: /atlas/templates/pages/areas/nav.ftl
+    templateScript: /blog/templates/pages/areas/nav.ftl
     type: noComponent
   main:
     type: list
@@ -26,23 +26,23 @@ areas:
     createAreaNode: false
     editable: false
     renderType: freemarker
-    templateScript: /atlas/templates/pages/areas/footer.ftl
+    templateScript: /blog/templates/pages/areas/footer.ftl
     type: noComponent
     areas:
       footerLeft:
-        templateScript: /atlas/templates/pages/areas/footer/footerLeft.ftl
+        templateScript: /blog/templates/pages/areas/footer/footerLeft.ftl
         type: list
         inheritance:
           components: all
           enabled: true
       footerMid:
-        templateScript: /atlas/templates/pages/areas/footer/footerMid.ftl
+        templateScript: /blog/templates/pages/areas/footer/footerMid.ftl
         type: list
         inheritance:
           components: all
           enabled: true
       footerRight:
-        templateScript: /atlas/templates/pages/areas/footer/footerRight.ftl
+        templateScript: /blog/templates/pages/areas/footer/footerRight.ftl
         type: list
         inheritance:
           components: all

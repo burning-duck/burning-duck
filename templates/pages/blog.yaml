@@ -1,0 +1,9 @@
+renderType: site
+areas:
+  main:
+    type: list
+    availableComponents:
+      textImage:
+        id: mtk:components/textImage
+  footer:
+    editable: true

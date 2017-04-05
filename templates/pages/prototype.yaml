@@ -28,22 +28,3 @@ areas:
     renderType: freemarker
     templateScript: /burning-duck/templates/pages/areas/footer.ftl
     type: noComponent
-    areas:
-      footerLeft:
-        templateScript: /burning-duck/templates/pages/areas/footer/footerLeft.ftl
-        type: list
-        inheritance:
-          components: all
-          enabled: true
-      footerMid:
-        templateScript: /burning-duck/templates/pages/areas/footer/footerMid.ftl
-        type: list
-        inheritance:
-          components: all
-          enabled: true
-      footerRight:
-        templateScript: /burning-duck/templates/pages/areas/footer/footerRight.ftl
-        type: list
-        inheritance:
-          components: all
-          enabled: true

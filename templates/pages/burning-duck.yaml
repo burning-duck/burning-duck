@@ -1,4 +1,5 @@
 renderType: site
+title: burning-duck
 areas:
   main:
     type: list

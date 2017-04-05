@@ -1,7 +1,7 @@
 dialog: mte:pages/pageProperties
 class: info.magnolia.module.site.templates.PrototypeTemplateDefinition
 
-templateScript: /blog/templates/pages/main.ftl
+templateScript: /burning-duck/templates/pages/main.ftl
 renderType: site
 type: feature
 
@@ -13,12 +13,12 @@ areas:
   htmlHeader:
     createAreaNode: false
     renderType: freemarker
-    templateScript: /blog/templates/pages/areas/htmlHeader.ftl
+    templateScript: /burning-duck/templates/pages/areas/htmlHeader.ftl
     type: noComponent
   nav:
     createAreaNode: false
     renderType: freemarker
-    templateScript: /blog/templates/pages/areas/nav.ftl
+    templateScript: /burning-duck/templates/pages/areas/nav.ftl
     type: noComponent
   main:
     type: list
@@ -26,23 +26,23 @@ areas:
     createAreaNode: false
     editable: false
     renderType: freemarker
-    templateScript: /blog/templates/pages/areas/footer.ftl
+    templateScript: /burning-duck/templates/pages/areas/footer.ftl
     type: noComponent
     areas:
       footerLeft:
-        templateScript: /blog/templates/pages/areas/footer/footerLeft.ftl
+        templateScript: /burning-duck/templates/pages/areas/footer/footerLeft.ftl
         type: list
         inheritance:
           components: all
           enabled: true
       footerMid:
-        templateScript: /blog/templates/pages/areas/footer/footerMid.ftl
+        templateScript: /burning-duck/templates/pages/areas/footer/footerMid.ftl
         type: list
         inheritance:
           components: all
           enabled: true
       footerRight:
-        templateScript: /blog/templates/pages/areas/footer/footerRight.ftl
+        templateScript: /burning-duck/templates/pages/areas/footer/footerRight.ftl
         type: list
         inheritance:
           components: all

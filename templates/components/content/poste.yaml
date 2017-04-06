@@ -1,0 +1,3 @@
+renderType: freemarker
+templateScript: /burning-duck/templates/components/content/poste.ftl
+dialog: burning-duck:components/content/poste

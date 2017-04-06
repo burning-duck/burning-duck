@@ -4,7 +4,5 @@ areas:
   main:
     type: list
     availableComponents:
-      textImage:
-        id: mtk:components/textImage
-      pageIntro:
-        id: mtk:components/pageIntro
+      poste:
+        id: burning-duck:components/content/poste

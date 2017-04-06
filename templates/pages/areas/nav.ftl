@@ -1,13 +1,14 @@
 [#assign site = sitefn.site()!]
 [#assign theme = sitefn.theme(site)!]
+[#assign homeLink = cmsfn.link(cmsfn.siteRoot(content))!"/"]
 
 <div class="ui equal width grid">
   <div class="column">
     <div class="ui center aligned segment">
       <p>
-
-        <img class="ui centered tiny circular image" src="${ctx.contextPath}/.resources/${theme.name}/webresources/img/burning-duck-logo.png" />
-
+        <a href="${homeLink}">
+            <img class="ui centered tiny circular image" src="${ctx.contextPath}/.resources/${theme.name}/webresources/img/burning-duck-logo.png" />
+        </a>
       </p>
       <p>
 

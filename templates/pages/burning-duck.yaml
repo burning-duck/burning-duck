@@ -6,5 +6,5 @@ areas:
     availableComponents:
       textImage:
         id: mtk:components/textImage
-  footer:
-    editable: true
+      pageIntro:
+        id: mtk:components/pageIntro

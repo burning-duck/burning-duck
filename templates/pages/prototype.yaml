@@ -24,7 +24,6 @@ areas:
     type: list
   footer:
     createAreaNode: false
-    editable: false
     renderType: freemarker
     templateScript: /burning-duck/templates/pages/areas/footer.ftl
     type: noComponent

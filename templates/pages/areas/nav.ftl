@@ -1,14 +1,25 @@
 [#assign site = sitefn.site()!]
 [#assign theme = sitefn.theme(site)!]
-[#assign homeLink = cmsfn.link(cmsfn.root(content, "mgnl:page"))]
+[#assign rootPage = cmsfn.root(content, "mgnl:page")!]
+[#if rootPage?has_content]
+  [#assign homeLink = cmsfn.link(rootPage)]
+[#else]
+  [#assign homeLink = cmsfn.link(content)]
+[/#if]
 
 <div class="ui equal width grid">
   <div class="column">
     <div class="ui center aligned segment">
       <p>
-        <a href="${homeLink}">
+        [#if homeLink?has_content]
+          <a href="${homeLink}">
+        [/#if]
+
             <img class="ui centered tiny circular image" src="${ctx.contextPath}/.resources/${theme.name}/webresources/img/burning-duck-logo.png" />
-        </a>
+
+        [#if homeLink?has_content]
+          </a>
+        [/#if]
       </p>
       <p>
 
@@ -20,7 +31,7 @@
         <a href="mailto:burning.duck.org@gmail.com">
           <i class="big mail outline icon"></i>
         </a>
-        
+
         <i class="mini circle icon"></i>
 
         <a href="https://github.com/burning-duck" target="_blank">
@@ -38,8 +49,8 @@
         <div class="ui center aligned segment">
         [#-- child pages link list --]
             <div class="ui list">
-                [#assign isContent = cmsfn.contentListByTemplateId(cmsfn.asJCRNode(content), "burning-duck:pages/placeholder")]
-                [#assign isRoot = cmsfn.contentListByTemplateId(cmsfn.asJCRNode(cmsfn.root(content, "mgnl:page")), "burning-duck:pages/placeholder")]
+                [#assign isContent = cmsfn.contentListByTemplateId(cmsfn.asJCRNode(content), "burning-duck:pages/placeholder")!]
+                [#assign isRoot = cmsfn.contentListByTemplateId(cmsfn.asJCRNode(cmsfn.root(content, "mgnl:page")), "burning-duck:pages/placeholder")!]
 
             [#if isContent?has_content]
                 [#assign pages = isContent]

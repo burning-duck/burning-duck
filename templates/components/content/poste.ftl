@@ -4,9 +4,10 @@
         <div class="column">
             <div class="ui orange segment">
                 <a class="ui orange ribbon label">
-                    ${content.title}
+                    ${cmsfn.metaData(content,"mgnl:created")}
                 </a>
-                <span>${content.subtitle}</span> ${cmsfn.metaData(content,"mgnl:created")}
+                <h1>${content.title}</h1>
+                <h3>${content.subtitle}</h3>
                 <p></p>
                 ${cmsfn.decode(content).poste!""}
             </div>

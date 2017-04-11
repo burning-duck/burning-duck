@@ -57,12 +57,8 @@
               [/#if]
               [#list pages as child ]
                 [#assign childPage = cmsfn.asContentMap(child)]
-                [#assign hideInNav = false]
-                [#if childPage.hideInNav?has_content]
-                  [#assign hideInNav = childPage.hideInNav]
-                [/#if]
 
-                [#if !hideInNav]
+                [#if !navfn.isHiddenInNav(childPage)]
                   <div class="item">
                       <i class="${childPage.title!} icon"></i>
                       <div class="content">

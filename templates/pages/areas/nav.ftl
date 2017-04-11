@@ -57,12 +57,19 @@
               [/#if]
               [#list pages as child ]
                 [#assign childPage = cmsfn.asContentMap(child)]
-                <div class="item">
-                    <i class="${childPage.title!} icon"></i>
-                    <div class="content">
-                      <a class="item" href="${cmsfn.link(childPage)}">${childPage.title!}</a>
-                    </div>
-                </div>
+                [#assign hideInNav = false]
+                [#if childPage.hideInNav?has_content]
+                  [#assign hideInNav = childPage.hideInNav]
+                [/#if]
+
+                [#if !hideInNav]
+                  <div class="item">
+                      <i class="${childPage.title!} icon"></i>
+                      <div class="content">
+                        <a class="item" href="${cmsfn.link(childPage)}">${childPage.title!}</a>
+                      </div>
+                  </div>
+                [/#if]
               [/#list]
             </div>
         </div>

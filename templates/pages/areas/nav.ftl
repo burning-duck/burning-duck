@@ -49,11 +49,11 @@
         <div class="ui center aligned segment">
         [#-- child pages link list --]
             <div class="ui list">
-              [#assign isContent = cmsfn.contentListByTemplateId(cmsfn.asJCRNode(content), "burning-duck:pages/placeholder")!]
+              [#assign isContent = cmsfn.contentListByTemplateId(cmsfn.asJCRNode(content), "mgnl:page")!]
               [#if isContent?has_content]
                   [#assign pages = isContent]
               [#else]
-                  [#assign pages = cmsfn.contentListByTemplateId(cmsfn.asJCRNode(rootPage), "burning-duck:pages/placeholder")!]
+                  [#assign pages = cmsfn.contentListByTemplateId(cmsfn.asJCRNode(rootPage), "mgnl:page")!]
               [/#if]
               [#list pages as child ]
                 [#assign childPage = cmsfn.asContentMap(child)]

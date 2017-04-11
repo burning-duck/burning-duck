@@ -5,7 +5,7 @@
 
             [#assign myMapList = cmsfn.children(content, "mgnl:page")!]
             [#-- child pages link list --]
-            <div class="ui list">
+            <div class="ui center aligned list">
             [#list cmsfn.asNodeList(myMapList)! as child]
                 [#assign childPage = cmsfn.asContentMap(child)]
                 <div class="item">

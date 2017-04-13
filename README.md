@@ -1,5 +1,5 @@
 # burning-duck.de
-[burning-duck.de](burning-duck.de) | [Magnolia](https://documentation.magnolia-cms.com/display/DOCS/Light+development+in+Magnolia) light-module
+[burning-duck.de](http://www.burning-duck.de) | [Magnolia](https://documentation.magnolia-cms.com/display/DOCS/Light+development+in+Magnolia) light-module
 
 ## Description
 This is the burning-duck.de Magnolia light-module.

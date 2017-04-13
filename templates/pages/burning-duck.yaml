@@ -1,8 +1,13 @@
 renderType: site
 title: burning-duck
 areas:
+  header:
+    editable: true
   main:
     type: list
     availableComponents:
-      poste:
-        id: burning-duck:components/content/poste
+      textImage:
+        id: mtk:components/textImage
+  footer:
+    editable: true
+

@@ -1,8 +1,0 @@
-renderType: site
-title: Placeholder Page
-areas:
-  main:
-    createAreaNode: false
-    renderType: freemarker
-    templateScript: /burning-duck/templates/pages/areas/placeholder.ftl
-    type: noComponent

@@ -1,47 +1,46 @@
-[#assign site = sitefn.site()!]
-[#assign theme = sitefn.theme(site)!]
-
 <div class="ui equal width grid">
-  <div class="column">
-    <div class="ui center aligned segment">
-      <p>
 
-        <a href="mailto:burning.duck.org@gmail.com">
-          <i class="big mail outline icon"></i>
-        </a>
-        
-        <i class="mini circle icon"></i>
+    <div class="column">
+        <div class="ui center aligned segment">
+            <p>
+              [@cms.area name="footerColumn"/]
+            </p>
 
-        <a href="https://github.com/burning-duck" target="_blank">
-          <i class="big github icon"></i>
-        </a>
+            <div class="ui divider"></div>
 
-        <i class="mini circle icon"></i>
+            <p>
+                <a href="mailto:burning.duck.org@gmail.com">
+                    <i class="big mail outline icon"></i>
+                </a>
 
-        <a href="https://discord.gg/5KGSrfd" target="_blank">
-          <i class="big talk outline icon"></i>
-        </a>
+                <i class="mini circle icon"></i>
 
-      </p>
+                <a href="https://github.com/burning-duck" target="_blank">
+                    <i class="big github icon"></i>
+                </a>
 
-      <p>
-        |
-        <a href="https://github.com/pbit" target="_blank">
-          <span>
-            pbit
-          </span>
-        </a>
+                <i class="mini circle icon"></i>
 
-        |
+                <a href="https://discord.gg/5KGSrfd" target="_blank">
+                    <i class="big talk outline icon"></i>
+                </a>
+            </p>
 
-        <a href="https://github.com/janroesler" target="_blank">
-          <span>
-            janroesler
-          </span>
-        </a>
-        |
-      </p>
+            <p>
+                <a href="https://github.com/pbit" target="_blank">
+                    <span>
+                        pbit
+                    </span>
+                </a>
 
+                |
+
+                <a href="https://github.com/janroesler" target="_blank">
+                    <span>
+                        janroesler
+                    </span>
+                </a>
+            </p>
+        </div>
     </div>
-  </div>
 </div>

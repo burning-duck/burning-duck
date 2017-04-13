@@ -1,8 +1,0 @@
-renderType: site
-title: Content
-areas:
-  main:
-    type: list
-    availableComponents:
-      textImage:
-        id: mtk:components/textImage

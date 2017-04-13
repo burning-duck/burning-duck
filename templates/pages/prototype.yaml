@@ -12,9 +12,8 @@ jsFiles:
 areas:
   htmlHeader:
     createAreaNode: false
-    renderType: freemarker
-    templateScript: /burning-duck/templates/pages/areas/htmlHeader.ftl
     type: noComponent
+    templateScript: /burning-duck/templates/pages/areas/htmlHeader.ftl
   nav:
     createAreaNode: false
     renderType: freemarker

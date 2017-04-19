@@ -1,0 +1,25 @@
+form:
+  tabs:
+    tabConfig:
+      label: Configuration
+      fields:
+        title:
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: List title
+        limit:
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Page limit
+          type: Long
+        page:
+          class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+          targetWorkspace: website
+          appName: pages
+          type: String
+          required: true
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+    label: Save
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition
+    label: Cancel

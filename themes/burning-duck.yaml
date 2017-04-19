@@ -3,3 +3,14 @@ cssFiles:
     addFingerPrint: true
     link: https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css
     media: all
+  font:
+    addFingerPrint: true
+    link: https://fonts.googleapis.com/css?family=Roboto
+    media: all
+
+imaging:
+  class: info.magnolia.templating.imaging.VariationAwareImagingSupport
+  variations:
+    original:
+      class: info.magnolia.templating.imaging.variation.SimpleResizeVariation
+      width: 1600

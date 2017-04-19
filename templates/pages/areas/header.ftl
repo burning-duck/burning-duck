@@ -9,7 +9,7 @@
 
 <div class="ui equal width grid">
     <div class="column">
-        <div class="ui center aligned segment">
+        <div class="ui center aligned inverted segment">
 
             [#if homeLink?has_content]
               <a href="${homeLink!}">

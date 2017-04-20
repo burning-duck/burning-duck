@@ -8,6 +8,7 @@ areas:
     availableComponents:
       textImage:
         id: mtk:components/textImage
+      pageListTeaser:
+        id: burning-duck:components/pageListTeaser
   footer:
     editable: true
-

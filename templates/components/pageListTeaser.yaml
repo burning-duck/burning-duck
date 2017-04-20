@@ -1,0 +1,6 @@
+templateScript: /burning-duck/templates/components/pageListTeaser.ftl
+dialog: burning-duck:components/pageListTeaser
+
+renderType: freemarker
+title: Page List Teaser
+label: Page List Teaser

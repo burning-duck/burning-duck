@@ -15,6 +15,7 @@ form:
           targetWorkspace: website
           appName: pages
           type: String
+          label: Get childs from
           required: true
 actions:
   commit:

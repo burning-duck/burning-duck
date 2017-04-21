@@ -8,3 +8,5 @@ areas:
         id: mtk:components/textImage
       pageListTeaser:
         id: burning-duck:components/pageListTeaser
+      labelGroup:
+        id: burning-duck:components/labelGroup

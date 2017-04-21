@@ -1,0 +1,4 @@
+title: labelItem
+renderType: freemarker
+templateScript: /burning-duck/templates/components/labelItem.ftl
+dialog: burning-duck:components/labelItem

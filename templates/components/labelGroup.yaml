@@ -1,0 +1,10 @@
+title: Label Group
+renderType: freemarker
+templateScript: /burning-duck/templates/components/labelGroup.ftl
+dialog: burning-duck:components/labelGroup
+areas:
+  labelItems:
+    type: list
+    availableComponents:
+      labelItem:
+        id: burning-duck:components/labelItem

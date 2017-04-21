@@ -1,0 +1,52 @@
+form:
+  label: Label Item
+  tabs:
+    tabConfig:
+      label: Config
+      fields:
+        content:
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Content
+        detail:
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Detail
+        color:
+          class: info.magnolia.ui.form.field.definition.SelectFieldDefinition
+          label: Color
+          sortOptions: false
+          options:
+            none:
+              label: None
+              selected: true
+            red:
+              label: Red
+            orange:
+              label: Orange
+            yellow:
+              label: Yellow
+            olive:
+              label: Olive
+            green:
+              label: Green
+            teal:
+              label: Teal
+            blue:
+              label: Blue
+            violet:
+              label: Violet
+            purple:
+              label: Purple
+            pink:
+              label: Pink
+            brown:
+              label: Brown
+            grey:
+              label: Grey
+            black:
+              label: Black
+
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

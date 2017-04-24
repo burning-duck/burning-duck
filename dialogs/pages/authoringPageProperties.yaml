@@ -1,0 +1,75 @@
+form:
+  tabs:
+    tabMain:
+      label: Main
+      fields:
+        title:
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Page title
+          i18n: true
+        navigationTitle:
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Navigation title
+          i18n: true
+        hideInNav:
+          class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
+          label: Navigation
+          buttonLabel: Don't show this page in any site navigation
+          defaultValue: false
+          i18n: false
+          type: Boolean
+        windowTitle:
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Window title
+          i18n: true
+    tabAuthoring:
+      label: Authoring
+      fields:
+        teaserTitle:
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Teaser title
+          i18n: true
+        teaserText:
+          class: info.magnolia.ui.form.field.definition.RichTextFieldDefinition
+          label: Teaser text
+          colors: 0A0A0A,f05440
+          images: true
+          source: true
+          tables: true
+          i18n: true
+        author:
+          class: info.magnolia.ui.form.field.definition.SelectFieldDefinition
+          label: Author
+          options:
+            burningduck:
+              value: burning-duck.svg
+              selected: true
+              label: burning-duck
+            peter:
+              value: peter.jpg
+              label: Peter
+            jan:
+              value: jan.jpg
+              label: Jan
+        date:
+          class: info.magnolia.ui.form.field.definition.DateFieldDefinition
+          label: Date
+    tabMeta:
+      label: Meta Data
+      fields:
+        keywords:
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Keywords
+          i18n: true
+          rows: 3
+        description:
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Description
+          i18n: true
+          rows: 5
+
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

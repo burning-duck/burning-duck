@@ -11,10 +11,6 @@
 <meta name="keywords" content="${content.keywords!""}" />
 <meta name="author" content="burning-duck.de" />
 
-<!--[if IE]>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<![endif]-->
-
 <link rel="icon" href="${ctx.contextPath}/.resources/${theme.name}/webresources/img/favicon.ico" />
 
 [#list theme.cssFiles as cssFile]

@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-    <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" xml:lang="${cmsfn.language()}" lang="${cmsfn.language()}"><![endif]-->
-    <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" xml:lang="${cmsfn.language()}" lang="${cmsfn.language()}"><![endif]-->
-    <!--[if IE 8]><html class="no-js lt-ie9" xml:lang="${cmsfn.language()}" lang="${cmsfn.language()}"><![endif]-->
-    <!--[if gt IE 8]><!--><html class="no-js" xml:lang="${cmsfn.language()}" lang="${cmsfn.language()}"><!--<![endif]-->
-
     <head>
         [@cms.page /]
         [@cms.area name="htmlHeader"/]
@@ -40,6 +35,7 @@
 
         [#if def.jsFiles??]
             [#list def.jsFiles as jsFile]
+                <div>FOO</div>
                 <script src="${jsFile.link}"></script>
             [/#list]
         [/#if]

@@ -1,0 +1,21 @@
+class: info.magnolia.ui.form.field.definition.SelectFieldDefinition
+label: Size
+sortOptions: false
+options:
+  none:
+    label: None
+    selected: true
+  mini:
+    label: Mini
+  tiny:
+    label: Tiny
+  small:
+    label: Small
+  large:
+    label: Large
+  big:
+    label: Big
+  huge:
+    label: Huge
+  massive:
+    label: Massive

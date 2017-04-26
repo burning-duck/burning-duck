@@ -54,6 +54,27 @@ form:
         date:
           class: info.magnolia.ui.form.field.definition.DateFieldDefinition
           label: Date
+    tabConfig:
+      label: Label items
+      fields:
+        items:
+          class: info.magnolia.ui.form.field.definition.MultiValueFieldDefinition
+          label: Items
+          transformerClass: info.magnolia.ui.form.field.transformer.multi.MultiValueSubChildrenNodePropertiesTransformer
+          field:
+            name: compositeField
+            class: info.magnolia.ui.form.field.definition.CompositeFieldDefinition
+            transformerClass: info.magnolia.ui.form.field.transformer.composite.NoOpCompositeTransformer
+            layout: vertical
+            fields:
+              content:
+                class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+                label: Content
+              detail:
+                class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+                label: Detail
+              color: !include /burning-duck/common/fields/semantic-ui-color-select.yaml
+              size: !include /burning-duck/common/fields/semantic-ui-size-select.yaml
     tabMeta:
       label: Meta Data
       fields:

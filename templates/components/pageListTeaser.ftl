@@ -18,17 +18,27 @@
           [#assign count = 0]
           [#list cmsfn.children(parentPage, "mgnl:page") as pageContent ]
             [#if count < content.limit]
-              [#include "/burning-duck/common/snippets/pageListTeaserSnippet.ftl"]
-              . . . <a href="${cmsfn.link(pageContent)}">read more</a>
-              [#assign count += 1]
+              [#assign currentPageTemplate = cmsfn.metaData(pageContent, "mgnl:template")]
+              [#if currentPageTemplate?? && currentPageTemplate == "burning-duck:pages/authoring"]
+
+                [#include "/burning-duck/common/snippets/pageListTeaserSnippet.ftl"]
+                . . . <a href="${cmsfn.link(pageContent)}">read more</a>
+
+                [#assign count += 1]
+              [/#if]
             [/#if]
           [/#list]
 
       [#else]
 
         [#list cmsfn.children(parentPage, "mgnl:page") as pageContent ]
-          [#include "/burning-duck/common/snippets/pageListTeaserSnippet.ftl"]
-          . . . <a href="${cmsfn.link(pageContent)}">read more</a>
+          [#assign currentPageTemplate = cmsfn.metaData(pageContent, "mgnl:template")]
+          [#if currentPageTemplate?? && currentPageTemplate == "burning-duck:pages/authoring"]
+
+            [#include "/burning-duck/common/snippets/pageListTeaserSnippet.ftl"]
+            . . . <a href="${cmsfn.link(pageContent)}">read more</a>
+
+          [/#if]
         [/#list]
 
       [/#if]

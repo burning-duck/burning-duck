@@ -21,15 +21,7 @@
     <body>
         [@cms.area name="header"/]
 
-        <div class="ui equal width grid invert">
-            <div class="two wide column"></div>
-            <div class="twelve wide column">
-              <div class="ui very padded inverted segment">
-                [@cms.area name="main"/]
-              </div>
-            <div class="two wide column"></div>
-            </div>
-        </div>
+        [@cms.area name="main"/]
 
         [@cms.area name="footer"/]
 

@@ -2,11 +2,15 @@ renderType: site
 title: content
 areas:
   main:
-    type: list
-    availableComponents:
-      textImage:
-        id: mtk:components/textImage
-      pageListTeaser:
-        id: burning-duck:components/pageListTeaser
-      labelGroup:
-        id: burning-duck:components/labelGroup
+    areas:
+      contentArea:
+        type: list
+        availableComponents:
+          textImage:
+            id: mtk:components/textImage
+          pageListTeaser:
+            id: burning-duck:components/pageListTeaser
+          labelGroup:
+            id: burning-duck:components/labelGroup
+          paragraph:
+            id: burning-duck:components/paragraph

@@ -31,7 +31,17 @@ areas:
           linkList:
             id: mtk:components/link
   main:
-    type: list
+    type: noComponent
+    templateScript: /burning-duck/templates/pages/areas/main.ftl
+    areas:
+      leftColumn:
+        templateScript: /burning-duck/templates/pages/areas/main/leftColumn.ftl
+        type: list
+      contentArea:
+        type: list
+      rightColumn:
+        templateScript: /burning-duck/templates/pages/areas/main/rightColumn.ftl
+        type: list
   footer:
     type: noComponent
     editable: false

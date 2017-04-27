@@ -3,8 +3,12 @@ dialog: burning-duck:pages/authoringPageProperties
 title: authoring
 areas:
   main:
-    templateScript: /burning-duck/templates/pages/areas/authoringMain.ftl
-    type: list
-    availableComponents:
-      textImage:
-        id: mtk:components/textImage
+    areas:
+      contentArea:
+        templateScript: /burning-duck/templates/pages/areas/authoringMain.ftl
+        type: list
+        availableComponents:
+          textImage:
+            id: mtk:components/textImage
+          paragraph:
+            id: burning-duck:components/paragraph

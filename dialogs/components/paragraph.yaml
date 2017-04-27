@@ -1,0 +1,22 @@
+form:
+  tabs:
+    tabParagraph:
+      label: Paragraph
+      fields:
+        headline:
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Headline
+          required: true
+        text:
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Text
+          required: true
+          rows: 2
+
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+    label: Save
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition
+    label: Cancel

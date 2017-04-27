@@ -1,0 +1,6 @@
+templateScript: /burning-duck/templates/components/paragraph.ftl
+dialog: burning-duck:components/paragraph
+
+renderType: freemarker
+title: Content paragraph
+label: Content paragraph

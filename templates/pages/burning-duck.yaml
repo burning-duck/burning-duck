@@ -4,11 +4,15 @@ areas:
   header:
     editable: true
   main:
-    type: list
-    availableComponents:
-      textImage:
-        id: mtk:components/textImage
-      pageListTeaser:
-        id: burning-duck:components/pageListTeaser
+    areas:
+      contentArea:
+        type: list
+        availableComponents:
+          textImage:
+            id: mtk:components/textImage
+          pageListTeaser:
+            id: burning-duck:components/pageListTeaser
+          paragraph:
+            id: burning-duck:components/paragraph
   footer:
     editable: true

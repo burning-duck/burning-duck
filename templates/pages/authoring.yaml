@@ -1,6 +1,7 @@
 renderType: site
 dialog: burning-duck:pages/authoringPageProperties
-title: authoring
+title: authoring page
+
 areas:
   main:
     areas:

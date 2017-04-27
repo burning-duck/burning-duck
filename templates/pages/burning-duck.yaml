@@ -1,5 +1,6 @@
 renderType: site
-title: burning-duck
+title: burning-duck start page
+
 areas:
   header:
     editable: true

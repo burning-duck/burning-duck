@@ -1,5 +1,6 @@
 renderType: site
-title: content
+title: basic content page
+
 areas:
   main:
     areas:

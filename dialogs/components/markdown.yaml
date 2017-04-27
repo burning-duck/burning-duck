@@ -1,0 +1,17 @@
+form:
+  tabs:
+    tabMarkdown:
+      label: Markdown
+      fields:
+        md:
+          class: info.magnolia.ui.form.field.definition.CodeFieldDefinition
+          language: markdown
+          label: Enter code
+
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+    label: Save
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition
+    label: Cancel

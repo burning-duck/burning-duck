@@ -1,0 +1,6 @@
+templateScript: /burning-duck/templates/components/markdown.ftl
+dialog: burning-duck:components/markdown
+
+renderType: freemarker
+title: Markdown
+label: Markdown

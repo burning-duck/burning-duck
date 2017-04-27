@@ -18,3 +18,5 @@ areas:
             id: mtk:components/textImage
           paragraph:
             id: burning-duck:components/paragraph
+          markdown:
+            id: burning-duck:components/markdown

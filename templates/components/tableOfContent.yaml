@@ -1,0 +1,5 @@
+templateScript: /burning-duck/templates/components/tableOfContent.ftl
+
+renderType: freemarker
+title: Table of content
+label: Table of content

@@ -5,6 +5,11 @@ title: authoring page
 areas:
   main:
     areas:
+      leftColumn:
+        type: list
+        availableComponents:
+          tableOfContent:
+            id: burning-duck:components/tableOfContent
       contentArea:
         templateScript: /burning-duck/templates/pages/areas/authoringMain.ftl
         type: list

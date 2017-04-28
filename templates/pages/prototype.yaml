@@ -10,6 +10,8 @@ jsFiles:
     addFingerPrint: true
   - link: https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js
     addFingerPrint: true
+  - link: https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/prism.min.js
+    addFingerPrint: true
 
 areas:
   htmlHeader:

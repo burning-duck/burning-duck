@@ -1,3 +1,3 @@
 [#if content.md?has_content]
-  ${content.md}
+	${markdownfn.renderToHtml(content, "md")}
 [/#if]

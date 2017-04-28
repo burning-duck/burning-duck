@@ -15,5 +15,7 @@ areas:
             id: burning-duck:components/pageListTeaser
           paragraph:
             id: burning-duck:components/paragraph
+          markdown:
+            id: burning-duck:components/markdown
   footer:
     editable: true

@@ -7,6 +7,10 @@ cssFiles:
     addFingerPrint: true
     link: https://fonts.googleapis.com/css?family=Roboto
     media: all
+  prism:
+    addFingerPrint: true
+    link: https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism.min.css
+    media: all
 
 imaging:
   class: info.magnolia.templating.imaging.VariationAwareImagingSupport
